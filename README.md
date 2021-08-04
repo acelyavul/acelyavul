@@ -8,7 +8,7 @@ Hi! I am currently learning and interested in using JavaScript, ReactJS, and Rea
 
 ## Get in touch
 
-- Email: [acelyavuluvan@gmail.com]
-- Twitter: [https://twitter.com/acelya_vul]
+- Email: acelyavuluvan@gmail.com
+- Twitter: https://twitter.com/acelya_vul
 
 
