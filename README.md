@@ -1,5 +1,5 @@
-[![GitHub Views](https://komarev.com/ghpvc/?username=acelyavul&color=FF007F)][1]
-[![javascript](https://img.shields.io/badge/JavaScript-Fan-FAC151.svg?logo=javascript&logoWidth=20)](https://github.com/acelyavul)
+![GitHub Views](https://komarev.com/ghpvc/?username=acelyavul&color=FF007F)
+![javascript](https://img.shields.io/badge/JavaScript-Fan-FAC151.svg?logo=javascript&logoWidth=20)(https://github.com/acelyavul)
 
 # Acelya Vuluvan
 
