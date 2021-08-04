@@ -9,6 +9,6 @@ Hi! I am currently learning and interested in using JavaScript, ReactJS, and Rea
 ## Get in touch
 
 - Email: [acelyavuluvan@gmail.com]
-- Twitter: [acelya_vul]
+- Twitter: [@acelya_vul]
 
 
