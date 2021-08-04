@@ -1,6 +1,6 @@
 ![GitHub Views](https://komarev.com/ghpvc/?username=acelyavul&color=FF007F)
 ![javascript](https://img.shields.io/badge/JavaScript-Fan-FAC151.svg?logo=javascript&logoWidth=20)
-![Profile](https://github.com/acelyavul)
+
 
 # Acelya Vuluvan
 
@@ -9,6 +9,6 @@ Hi! I am currently learning and interested in using JavaScript, ReactJS, and Rea
 ## Get in touch
 
 - Email: [acelyavuluvan@gmail.com]
-- Twitter: [twitter.com/acelya_vul]
+- Twitter: [acelya_vul]
 
 
