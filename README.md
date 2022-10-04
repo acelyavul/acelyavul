@@ -22,6 +22,7 @@ Hi! I am Mobile and Frontend Engineer, currently living in Istanbul.
   <img alt="css3" src="https://img.shields.io/badge/-CSS3-blue?style=flat&logo=CSS3&color=blue" />
   <img alt="JavaScript" src="https://img.shields.io/badge/JavaScript-grey?logo=javascript&logoWidth=20" />
   <img alt="Python" src="https://img.shields.io/badge/Python-F7CB3F?logo=python&style=flat-square" />
+  <img alt="Artificial Intelligence" src="https://img.shields.io/badge/Artificial_Intelligence-F7CB3F?logo=artificial_intelligence&style=flat-square" />
   <img alt="React" src="https://img.shields.io/badge/-React-45b8d8?style=flat-square&logo=react&logoColor=white" />
   <img alt="Webpack" src="https://img.shields.io/badge/-Webpack-F7F7F7?style=flat-square&logo=webpack&logoColor=1B74BA" /> 
   <img alt="Jest" src="https://img.shields.io/badge/-Jest-fff?style=flat&logo=jest&logoColor=944058" />
