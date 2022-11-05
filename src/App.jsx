@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 
 import Navbar from "./components/Navbar";
 import Hero from "./screens/Hero";
@@ -15,6 +15,7 @@ export default function App() {
 			<Container>
 				<Navbar />
 				<Routes>
+					<Route path='/' element={<Navigate replace to='/home' />} />
 					<Route path='home' element={<Hero />} />
 					<Route path='about' element={<About />} />
 					<Route path='projects' element={<Projects />} />
