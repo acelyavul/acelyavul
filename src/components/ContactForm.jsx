@@ -16,7 +16,7 @@ const FormOverlay = ({ onClose }) => {
 		formData.append("email", e.target.elements.email.value);
 		formData.append("message", e.target.elements.message.value);
 
-		const dataObject = Object.fromEntries(formData);
+		// const dataObject = Object.fromEntries(formData);
 
 		e.target.reset();
 		onClose();
