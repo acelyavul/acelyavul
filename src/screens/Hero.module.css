@@ -1,0 +1,42 @@
+.section {
+  width: 100%;
+  min-height: 40vh;
+  position: relative;
+}
+
+@media (min-width: 640px) {
+  .section {
+    min-height: 60vh;
+  }
+}
+
+@media (min-width: 768px) {
+  .section {
+    min-height: 62vh;
+  }
+}
+
+.textStyle {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80vw;
+  position: absolute;
+  line-height: 1.2;
+  font-size: 6vw;
+  color: var(--zinc-500);
+}
+
+.titleStyle {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  position: absolute;
+  color: var(--zinc-200);
+  line-height: 1;
+  font-weight: bold;
+  font-size: 30vw;
+  text-align: center;
+  user-select: none;
+}

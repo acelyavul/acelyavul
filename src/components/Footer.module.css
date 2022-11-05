@@ -1,0 +1,23 @@
+.section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+  padding: 0.5rem 0;
+}
+
+.footerLink {
+  padding: 0.5rem;
+}
+
+.iconStyle:hover {
+  transform: scale(1.25);
+}
+
+.copyrightTextStyle {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  margin-top: 0.75rem;
+}

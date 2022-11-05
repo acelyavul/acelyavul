@@ -1,0 +1,103 @@
+.section {
+  width: 100%;
+  min-height: 40vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+@media (min-width: 640px) {
+  .section {
+    min-height: 60vh;
+  }
+}
+
+@media (min-width: 768px) {
+  .section {
+    min-height: 62vh;
+  }
+}
+
+.displayInline {
+  display: inline-block;
+}
+
+.projectContainerStyle {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--gold);
+  border-radius: 0.25rem;
+  background-color: var(--zinc-100);
+  padding: 1rem 1rem;
+  max-width: 25rem;
+  min-height: 20rem;
+}
+
+.iconStyle {
+  margin-right: 0.7rem;
+  fill: var(--gold);
+}
+
+.link {
+  margin-left: auto;
+}
+
+.containerStyle {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem;
+}
+
+.contentContainerStyle {
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem 0.5rem 0 0.5rem;
+  gap: 0.3rem;
+}
+
+.titleStyle {
+  display: inline-block;
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--zinc-500);
+  letter-spacing: 0.5px;
+}
+
+.subtitleStyle {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--zinc-500);
+}
+
+.textStyle {
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--zinc-600);
+  letter-spacing: 0.3px;
+}
+
+.imageContainerStyle {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0 0 0.5rem 0.5rem;
+}
+
+.imageStyle {
+  max-height: 3.5rem;
+}
+
+.tagContainerStyle {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tagStyle {
+  color: var(--zinc-50);
+  font-size: 0.8rem;
+  padding: 0.2rem 0.4rem;
+  border-radius: 0.25rem;
+  margin: 0.1rem;
+}
