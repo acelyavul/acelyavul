@@ -7,15 +7,11 @@
   justify-content: center;
 }
 
-@media (min-width: 640px) {
+@media (max-width: 768px) {
   .section {
     min-height: 60vh;
-  }
-}
-
-@media (min-width: 768px) {
-  .section {
-    min-height: 62vh;
+    flex-direction: column;
+    padding: 1rem 0;
   }
 }
 
@@ -33,7 +29,7 @@
   color: var(--zinc-600);
 }
 
-.textStyle > span {
+.textStyle>span {
   font-weight: 700;
 }
 

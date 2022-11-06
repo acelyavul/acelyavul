@@ -41,7 +41,7 @@ export default function Projects() {
 								src={project.image_url}
 								className={styles.imageStyle}
 								alt={project.name}
-								loading="lazy" 
+								loading='lazy'
 							/>
 						</div>
 
@@ -53,10 +53,11 @@ export default function Projects() {
 						<div className={styles.contentContainerStyle}>
 							<h4 className={styles.subtitleStyle}>Technology</h4>
 							<div className={styles.tagContainerStyle}>
-								{project.tags.map(tag => {
+								{project.tags.map((tag, idx) => {
 									const backgroundColor = Utils.getDarkColor();
 									return (
 										<span
+											key={idx}
 											className={styles.tagStyle}
 											style={{
 												backgroundColor: backgroundColor,
