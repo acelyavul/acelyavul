@@ -15,7 +15,7 @@ export default function App() {
 			<Container>
 				<Navbar />
 				<Routes>
-					<Route path='/' element={<Navigate replace to='/home' />} />
+					<Route path='/' element={<Navigate replace to='home' />} />
 					<Route path='home' element={<Hero />} />
 					<Route path='about' element={<About />} />
 					<Route path='projects' element={<Projects />} />
