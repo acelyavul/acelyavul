@@ -21,9 +21,9 @@ const FormOverlay = ({ onClose }) => {
 		fetch("/", {
 			method: "POST",
 			headers: { "Content-Type": "application/x-www-form-urlencoded" },
-			body: { "form-name": "contact-", ...dataObject },
+			body: { "form-name": "contact", ...dataObject },
 		})
-			.then(() => alert("Success!"))
+			.then(() => alert("Mesajınız iletilmiştir!"))
 			.catch(error => alert(error));
 
 		e.target.reset();
@@ -34,12 +34,11 @@ const FormOverlay = ({ onClose }) => {
 		<form
 			className={styles.form}
 			onSubmit={onSubmitHandler}
-			name='contact-form'
-			id='contact-form'
+			name='contact'
+			id='contact'
 			method='POST'
-			action='POST'
 			autoComplete='on'
-			data-netlify='true'
+			netlify
 		>
 			<div className={styles.formGroup}>
 				<label htmlFor='fullName'>Name/Surname</label>
@@ -73,7 +72,8 @@ const FormOverlay = ({ onClose }) => {
 					rows='5'
 				></textarea>
 			</div>
-			<input type='hidden' name='form-name' value='contact-form' />
+
+			<input type='hidden' name='form-name' value='contact' />
 			<div data-netlify-recaptcha='true'></div>
 
 			<div className={styles.btnContainer}>

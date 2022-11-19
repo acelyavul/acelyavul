@@ -16,7 +16,12 @@ export default function Navbar() {
 		<Fragment>
 			<nav className={`animation-fadeIn ${styles.nav}`}>
 				<Link to='home' className={styles.logoBox}>
-					<img src={logo} className={styles.logo} alt='brand-logo' loading="lazy"  />
+					<img
+						src={logo}
+						className={styles.logo}
+						alt='brand-logo'
+						loading='lazy'
+					/>
 				</Link>
 
 				<div className={styles.navLinks}>
@@ -32,13 +37,9 @@ export default function Navbar() {
 						</NavLink>
 					</div>
 					<div>
-						<NavLink
-							to='#contact'
-							className={styles.btnContact}
-							onClick={closeFormHandler}
-						>
+						<button className={styles.btnContact} onClick={closeFormHandler}>
 							Contact me
-						</NavLink>
+						</button>
 					</div>
 				</div>
 			</nav>
