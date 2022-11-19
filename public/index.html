@@ -32,6 +32,13 @@
 		<div id="root"></div>
 		<div id="backdrop"></div>
 		<div id="form"></div>
+
+		<!-- A little help for the Netlify post-processing bots -->
+		<form name="contact" netlify netlify-honeypot="bot-field" hidden>
+			<input type="text" name="name" />
+			<input type="email" name="email" />
+			<textarea name="message"></textarea>
+		</form>
 		<!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.

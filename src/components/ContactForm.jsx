@@ -6,6 +6,12 @@ const Backdrop = ({ onClose }) => {
 	return <div className={styles.backdrop} onClick={onClose} />;
 };
 
+const encode = data => {
+	return Object.keys(data)
+		.map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+		.join("&");
+};
+
 const FormOverlay = ({ onClose }) => {
 	function onSubmitHandler(e) {
 		e.preventDefault();
@@ -21,7 +27,7 @@ const FormOverlay = ({ onClose }) => {
 		fetch("/", {
 			method: "POST",
 			headers: { "Content-Type": "application/x-www-form-urlencoded" },
-			body: { "form-name": "contact", ...dataObject },
+			body: encode({ "form-name": "contact", ...dataObject }),
 		})
 			.then(() => alert("Mesajınız iletilmiştir!"))
 			.catch(error => alert(error));
@@ -38,8 +44,10 @@ const FormOverlay = ({ onClose }) => {
 			id='contact'
 			method='POST'
 			autoComplete='on'
-			netlify
+			data-netlify='true'
 		>
+			<input type='hidden' name='form-name' value='contact' />
+
 			<div className={styles.formGroup}>
 				<label htmlFor='fullName'>Name/Surname</label>
 				<input
@@ -73,7 +81,6 @@ const FormOverlay = ({ onClose }) => {
 				></textarea>
 			</div>
 
-			<input type='hidden' name='form-name' value='contact' />
 			<div data-netlify-recaptcha='true'></div>
 
 			<div className={styles.btnContainer}>
