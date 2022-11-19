@@ -27,13 +27,13 @@ const Footer = () => {
 					</div>
 				</a>
 				<a
-					href='https://www.instagram.com/__acelya_vol/'
+					href='https://github.com/acelyavul'
 					target='_blank'
 					rel='noopener noreferrer'
-					aria-label='Instagram'
+					aria-label='Github'
 				>
 					<div className={styles.footerLink}>
-						<Icon.Instagram className={styles.iconStyle} size={36} />
+						<Icon.Github className={styles.iconStyle} size={36} />
 					</div>
 				</a>
 				<a href='mailto:acelyavuluvan@gmail.com' aria-label='Email Address'>

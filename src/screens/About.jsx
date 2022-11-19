@@ -11,8 +11,9 @@ export default function About() {
 					<span> React and React Native.</span>
 					<br />
 					<br />I completed online courses in education platforms like Udemy,
-					KCD, Cisco, AWS, etc to learn and develop my skills. Ideally, I would
-					like to continue to specialize in this field. ❞
+					Kent C. Dodds Workshop, Cisco Networking Academy, AWS, IBM Cognitive
+					class etc to learn and develop my skills. Ideally, I would like to
+					continue to specialize in this field.❞
 				</blockquote>
 				<p className={styles.nameStyle}>&mdash; Acelya V</p>
 			</div>
