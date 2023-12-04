@@ -41,7 +41,7 @@ export const projects = [
 		description: "Oto Plan is a fleet leasing brand founded in 2012 with a vision that brings a modern and innovative perspective to the operational fleet leasing sector.",
 		code: "",
 		tags: ["React Native", "Firebase Cloud Messaging"],
-		website_link: "https://play.google.com/store/apps/details?id=com.otoplanmobile",
+		website_link: "https://onelink.to/otoplan",
 	},
 	{
 		id: 4,
