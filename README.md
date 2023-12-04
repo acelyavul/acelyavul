@@ -9,8 +9,8 @@ Hi! I am Fullstack Engineer, currently living in Istanbul.
 ## Get in touch
 
 <p>
-<a href="https://twitter.com/acelya_vul" target="_blank"><img alt="Twitter" src="https://img.shields.io/badge/twitter-%231DA1F2.svg?&style=for-the-badge&logo=twitter&logoColor=white" /></a> 
-<a href="https://www.linkedin.com/in/a%C3%A7elya-v-833887212/" target="_blank"><img alt="LinkedIn" src="https://img.shields.io/badge/linkedin-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white" /></a>
+<a href="https://twitter.com/acelyavuluvan" target="_blank"><img alt="Twitter" src="https://img.shields.io/badge/twitter-%231DA1F2.svg?&style=for-the-badge&logo=twitter&logoColor=white" /></a> 
+<a href="https://www.linkedin.com/in/acelya-v-833887212/" target="_blank"><img alt="LinkedIn" src="https://img.shields.io/badge/linkedin-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white" /></a>
 <a href="mailto:acelyavuluvan@gmail.com" target="_blank"><img alt="Email" src="https://img.shields.io/badge/Gmail-fff?&style=for-the-badge&logo=gmail&logoColor=blue" /></a>
 </p>
 
