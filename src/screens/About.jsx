@@ -5,15 +5,26 @@ export default function About() {
 		<section className={styles.section}>
 			<div className={styles.textContainer}>
 				<blockquote className={`animation-fadeIn ${styles.textStyle}`}>
-					❝ I have more than one year of experience as a fullstack engineer with
-					Sayarus Technology, based in Istanbul. In my short time there, I've
-					already assisted to a lot of projects built in
-					<span> React and React Native.</span>
+					❝ Hello and welcome! I'm a Full Stack Engineer with a passion for
+					crafting innovative web and mobile applications. Within my professional role, I'm adept at using <strong>React</strong> for frontend, alongside <strong>NodeJS, Python, PostgreSQL, REST
+					API</strong>, and <strong>GraphQL</strong> for robust backend development. Moreover, I'm building mobile applications using <strong>React Native</strong>. I find immense
+					fulfillment in guiding and mentoring junior developers while actively
+					engaging in code reviews.
 					<br />
-					<br />I completed online courses in education platforms like Udemy,
-					Kent C. Dodds Workshop, Cisco Networking Academy, AWS, IBM Cognitive
-					class etc to learn and develop my skills. Ideally, I would like to
-					continue to specialize in this field.❞
+					<br />
+					My learning journey involves certifications such as Improving Deep
+					Neural Networks, Aygaz Veri Analizi Bootcamp, Neural Networks and Deep
+					Learning, among others, enriching my skills in <i>Machine and Deep
+					Learning</i>.
+					<br />
+					<br />
+					Outside of work, I'm passionate about staying active and embracing the
+					outdoors. Skiing down snow-capped mountains exhilarates me, offering
+					an adrenaline rush like no other. Fitness is another aspect I
+					prioritize; it not only keeps me physically fit but also instills
+					discipline and focus. These pursuits outside my professional realm
+					rejuvenate me, providing a perfect balance to the fast-paced tech
+					world I thrive in during work hours. ❞
 				</blockquote>
 				<p className={styles.nameStyle}>&mdash; Acelya V</p>
 			</div>

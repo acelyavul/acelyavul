@@ -13,7 +13,7 @@ const Footer = () => {
 					aria-label='Linkedin'
 				>
 					<div className={styles.footerLink}>
-						<Icon.Linkedin className={styles.iconStyle} size={36} />
+						<Icon.Linkedin className={styles.iconStyle} size={33} />
 					</div>
 				</a>
 				<a
@@ -23,7 +23,7 @@ const Footer = () => {
 					aria-label='Facebook'
 				>
 					<div className={styles.footerLink}>
-						<Icon.Twitter className={styles.iconStyle} size={36} />
+						<Icon.Twitter className={styles.iconStyle} size={33} />
 					</div>
 				</a>
 				<a
@@ -33,12 +33,12 @@ const Footer = () => {
 					aria-label='Github'
 				>
 					<div className={styles.footerLink}>
-						<Icon.Github className={styles.iconStyle} size={36} />
+						<Icon.Github className={styles.iconStyle} size={33} />
 					</div>
 				</a>
 				<a href='mailto:acelyavuluvan@gmail.com' aria-label='Email Address'>
 					<div className={styles.footerLink}>
-						<Icon.Email className={styles.iconStyle} size={36} />
+						<Icon.Email className={styles.iconStyle} size={33} />
 					</div>
 				</a>
 			</div>

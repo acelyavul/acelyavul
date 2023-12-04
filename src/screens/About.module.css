@@ -16,9 +16,9 @@
 }
 
 .textContainer {
-  max-width: 50rem;
+  max-width: 60rem;
   background-color: var(--zinc-100);
-  padding: 2rem;
+  padding: 1.5rem 1rem;
   border-radius: 0.25rem;
 }
 
@@ -35,7 +35,7 @@
 
 @media (min-width: 768px) {
   .textStyle {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
 }
 

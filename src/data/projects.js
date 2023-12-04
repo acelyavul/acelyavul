@@ -1,5 +1,7 @@
 import owarezaka from "../assets/images/owarezaka.png";
 import youthechef from "../assets/images/youthechef.png";
+import otoplan from "../assets/images/otoplan.png";
+import servisplan from "../assets/images/servisplan.png";
 
 export const projects = [
 	{
@@ -31,5 +33,23 @@ export const projects = [
 		code: "https://gitlab.com/owarezaka/owarezaka",
 		tags: ["React Native", "i18next", "Eslint", "Prettier", "Jest"],
 		website_link: "https://www.youtube.com/watch?v=s-_4Yv8SF2A",
+	},
+	{
+		id: 3,
+		name: "Oto Plan",
+		image_url: otoplan,
+		description: "Oto Plan is a fleet leasing brand founded in 2012 with a vision that brings a modern and innovative perspective to the operational fleet leasing sector.",
+		code: "",
+		tags: ["React Native", "Firebase Cloud Messaging"],
+		website_link: "https://play.google.com/store/apps/details?id=com.otoplanmobile",
+	},
+	{
+		id: 4,
+		name: "Servis Plan",
+		image_url: servisplan,
+		description: "Servis Plan provides a one-stop contact for maintenance, emergencies, with exclusive perks and 24/7 support for vehicle owners.",
+		code: "",
+		tags: ["React Native", "Firebase Cloud Messaging"],
+		website_link: "https://t.co/x1e4QLcszf",
 	},
 ];
