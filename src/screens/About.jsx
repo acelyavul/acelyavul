@@ -5,18 +5,16 @@ export default function About() {
 		<section className={styles.section}>
 			<div className={styles.textContainer}>
 				<blockquote className={`animation-fadeIn ${styles.textStyle}`}>
-					❝ Hello and welcome! I'm a Full Stack Engineer with a passion for crafting innovative 
-					web and mobile applications. Within my professional role, I'm adept at using <strong>React</strong> 
-					for frontend, alongside <strong>NodeJS, .NET, Python, PostgreSQL, REST API</strong>, and 
-					<strong>GraphQL</strong> for robust backend development. Moreover, I'm building mobile applications 
-					using <strong>React Native</strong>. I find immense fulfillment in guiding and mentoring junior 
-					developers while actively engaging in code reviews.
+					❝ Hello and welcome! I'm a Full Stack Engineer passionate about building innovative web and mobile applications. 
+					I specialize in React for frontend development, while leveraging <strong>NodeJS, .NET, Python, PostgreSQL, SQL Server, REST APIs, 
+					and GraphQL</strong> for creating robust backends. Additionally, I develop mobile applications using React Native. 
+					I find great fulfillment in mentoring junior developers and contributing to collaborative growth 
+					through code reviews.
 					<br />
 					<br />
 					My learning journey involves certifications such as Improving Deep Neural Networks, 
-					Aygaz Veri Analizi Bootcamp, Neural Networks and Deep Learning, among others, enriching 
-					my skills in <i>Machine and Deep Learning</i> while expanding into <strong>.NET</strong> 
-					for backend development.
+					Aygaz Veri Analizi Bootcamp, Neural Networks and Deep Learning by Andrew Ng, among others, enriching 
+					my skills in <i>Machine and Deep Learning</i>.
 					<br />
 					<br />
 					Outside of work, I'm passionate about staying active and embracing the outdoors. Skiing 
