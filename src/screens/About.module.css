@@ -21,6 +21,10 @@
   padding: 1.5rem 1rem;
   border-radius: 0.25rem;
 }
+.title {
+  font-weight: 600;
+  color: var(--zinc-800);
+}
 
 .textStyle {
   line-height: 1.2;
