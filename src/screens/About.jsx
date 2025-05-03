@@ -4,24 +4,17 @@ export default function About() {
 	return (
 		<section className={styles.section}>
 			<div className={styles.textContainer}>
+				<p className={styles.title}>Full Stack Engineer | AI Enthusiast | Mentor | Outdoor Explorer</p>
 				<blockquote className={`animation-fadeIn ${styles.textStyle}`}>
-					❝ Hello and welcome! I'm a Full Stack Engineer passionate about building innovative web and mobile applications. 
-					I specialize in React for frontend development, while leveraging <strong>NodeJS, .NET, Python, PostgreSQL, SQL Server, REST APIs, 
-					and GraphQL</strong> for creating robust backends. Additionally, I develop mobile applications using React Native. 
-					I find great fulfillment in mentoring junior developers and contributing to collaborative growth 
-					through code reviews.
-					<br />
-					<br />
-					My learning journey involves certifications such as Improving Deep Neural Networks, 
-					Aygaz Veri Analizi Bootcamp, Neural Networks and Deep Learning by Andrew Ng, among others, enriching 
-					my skills in <i>Machine and Deep Learning</i>.
-					<br />
-					<br />
-					Outside of work, I'm passionate about staying active and embracing the outdoors. Skiing 
-					down snow-capped mountains exhilarates me, offering an adrenaline rush like no other. 
-					Fitness is another aspect I prioritize; it not only keeps me physically fit but also instills 
-					discipline and focus. These pursuits outside my professional realm rejuvenate me, providing 
-					a perfect balance to the fast-paced tech world I thrive in during work hours. ❞
+					❝Hi! I’m a Full Stack Engineer who builds modern and intuitive interfaces with React and develops robust, scalable backend systems using Node.js, .NET, and Python. I work with PostgreSQL and SQL Server databases and create efficient data flows through RESTful and GraphQL APIs. I also deliver cross-platform mobile experiences using React Native.
+
+					As a developer, I value more than just writing code. I care deeply about learning together and growing as a team. I enjoy mentoring junior developers and contributing to a culture of quality through thoughtful code reviews.
+
+					My passion for machine learning and AI has been shaped by certifications like Andrew Ng’s “Neural Networks and Deep Learning” and “Improving Deep Neural Networks.” Continuous learning and growth are core values in my career journey.
+
+					Spending time in nature, skiing, and staying physically active bring me mental clarity and discipline. I strive to channel that energy into both my work and my relationships.
+
+					I’m committed to building meaningful solutions, creating value through technology, and growing alongside others. Feel free to connect — I’d love to meet you.❞
 				</blockquote>
 				<p className={styles.nameStyle}>&mdash; Acelya V</p>
 			</div>
