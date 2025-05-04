@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Markdown from "react-markdown";
 import { blogs } from "../blog";
-import styles from "./Hero.module.css";
+import styles from "./Blog.module.css";
 
 export default function Blog() {
   const [selectedBlog, setSelectedBlog] = useState(blogs[0]);
@@ -13,6 +13,8 @@ export default function Blog() {
           display: "flex",
           flexDirection: "row",
           marginBottom: "5rem",
+          backgroundColor: "#f4f4f5",
+          padding: "1rem",
         }}
       >
         <div
@@ -22,6 +24,7 @@ export default function Blog() {
             fontSize: 18,
             borderRight: "1px solid #ccc",
             minHeight: "100vh",
+            backgroundColor: "#f4f4f5",
           }}
         >
           {blogs.map((blog, index) => (
@@ -42,13 +45,14 @@ export default function Blog() {
         </div>
 
         <div
+          className="content"
           style={{
             width: "70%",
             textAlign: "left",
             fontSize: 20,
             whiteSpace: "pre-line",
-            marginTop: "1rem",
-            marginLeft: "2rem",
+            padding: "2rem 1rem",
+            backgroundColor: "#f4f4f5",
           }}
         >
           <Markdown>{selectedBlog.Article}</Markdown>
