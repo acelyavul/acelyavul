@@ -4,7 +4,7 @@
 
 Hi! I am Fullstack Engineer, currently living in Istanbul.
 
-[Portfolio](https://acelyavul.netlify.app/home) 
+[Portfolio](https://wwww.vuluvan.com) 
 
 ## Get in touch
 
