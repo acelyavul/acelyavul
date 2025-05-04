@@ -1,9 +1,14 @@
 import { useState } from "react";
 import Markdown from "react-markdown";
+import { useNavigate, useParams } from "react-router-dom";
 import { blogs } from "../blog";
 import styles from "./Blog.module.css";
 
+export const isMobile = window.innerWidth <= 768;
+
 export default function Blog() {
+  const navigate = useNavigate();
+  const { slug } = useParams();
   const [selectedBlog, setSelectedBlog] = useState(blogs[0]);
 
   return (
@@ -17,46 +22,100 @@ export default function Blog() {
           padding: "1rem",
         }}
       >
-        <div
-          style={{
-            width: "30%",
-            padding: "1rem",
-            fontSize: 18,
-            borderRight: "1px solid #ccc",
-            minHeight: "100vh",
-            backgroundColor: "#f4f4f5",
-          }}
-        >
-          {blogs.map((blog, index) => (
+        {slug ? (
+          <div
+            className="content"
+            style={{
+              width: "100%",
+              textAlign: "left",
+              fontSize: 20,
+              whiteSpace: "pre-line",
+              padding: "2rem 1rem",
+              backgroundColor: "#f4f4f5",
+            }}
+          >
             <div
-              key={index}
-              onClick={() => setSelectedBlog(blog)}
               style={{
-                marginBottom: "0.4rem",
-                cursor: "pointer",
-                color: selectedBlog.Title === blog.Title ? "#f4f4f5" : "black",
-                fontWeight:
-                  selectedBlog.Title === blog.Title ? "bold" : "normal",
+                marginBottom: "1rem",
+                fontSize: "0.9rem",
+                color: "#71717a",
               }}
             >
-              <p style={{ color: "black" }}> {blog.Title}</p>
+              <span
+                onClick={() => navigate("/blog")}
+                style={{
+                  cursor: "pointer",
+                  textDecoration: "underline",
+                  color: "#52525b",
+                  marginRight: "0.5rem",
+                }}
+              >
+                Blog
+              </span>
+              {slug && (
+                <>
+                  <span style={{ marginRight: "0.5rem" }}>/</span>
+                  <span>{selectedBlog.Title}</span>
+                </>
+              )}
             </div>
-          ))}
-        </div>
 
-        <div
-          className="content"
-          style={{
-            width: "70%",
-            textAlign: "left",
-            fontSize: 20,
-            whiteSpace: "pre-line",
-            padding: "2rem 1rem",
-            backgroundColor: "#f4f4f5",
-          }}
-        >
-          <Markdown>{selectedBlog.Article}</Markdown>
-        </div>
+            <img
+              src={selectedBlog.Image}
+              style={{ width: "100%" }}
+              alt={selectedBlog.Title}
+            />
+            <Markdown>{selectedBlog.Article}</Markdown>
+          </div>
+        ) : (
+          <div
+            style={{
+              width: "100%",
+              padding: "1rem",
+              fontSize: 18,
+              borderRight: "1px solid #ccc",
+              minHeight: "100vh",
+              backgroundColor: "#f4f4f5",
+              display: "flex",
+              flexDirection: "row",
+              gap: "1rem",
+            }}
+          >
+            {blogs.map((blog, index) => (
+              <div
+                key={index}
+                onClick={() => {
+                  setSelectedBlog(blog);
+                  if (blog.Slug) {
+                    navigate(`/blog/${blog.Slug}`);
+                  }
+                }}
+                style={{
+                  marginBottom: "0.4rem",
+                  cursor: "pointer",
+                  color:
+                    selectedBlog.Title === blog.Title ? "#f4f4f5" : "black",
+                  fontWeight:
+                    selectedBlog.Title === blog.Title ? "bold" : "normal",
+                }}
+              >
+                <img
+                  src={selectedBlog.Image}
+                  style={{ width: "100%" }}
+                  alt={selectedBlog.Title}
+                />
+                <div>
+                  <p style={{ color: "#18181b" }}> {blog.Title}</p>
+                  <p style={{ color: "#71717a" }}>
+                    {new Date(blog.PublishTime).toLocaleDateString(
+                      blog.Lang === "tr" ? "tr-TR" : "en-US",
+                    )}
+                  </p>
+                </div>
+              </div>
+            ))}
+          </div>
+        )}
       </div>
     </section>
   );
