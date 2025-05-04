@@ -1,0 +1,20 @@
+<IfModule mod_rewrite.c>
+RewriteEngine On
+
+# www yönlendirmesi
+RewriteCond %{HTTP_HOST} ^vuluvan\.com [NC]
+RewriteRule ^(.*)$ https://www.vuluvan.com/$1 [L,R=301]
+
+# subdirectory için yönlendirme
+RewriteBase /subdirectory
+RewriteRule ^index\.html$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.html [L]
+
+</IfModule>
+
+# AVIF MIME tipi ekleme
+<IfModule mod_mime.c>
+  AddType image/avif .avif
+</IfModule>

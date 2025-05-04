@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Markdown from "react-markdown";
 import { useNavigate, useParams } from "react-router-dom";
 import { blogs } from "../blog";
@@ -9,7 +9,16 @@ export const isMobile = window.innerWidth <= 768;
 export default function Blog() {
   const navigate = useNavigate();
   const { slug } = useParams();
-  const [selectedBlog, setSelectedBlog] = useState(blogs[0]);
+  const [selectedBlog, setSelectedBlog] = useState(null);
+  console.log(slug);
+  useEffect(() => {
+    if (slug) {
+      const found = blogs.find((blog) => blog.Slug === slug);
+      setSelectedBlog(found || blogs[0]);
+    } else {
+      setSelectedBlog(blogs[0]);
+    }
+  }, [slug]);
 
   return (
     <section className={styles.section}>
@@ -55,17 +64,17 @@ export default function Blog() {
               {slug && (
                 <>
                   <span style={{ marginRight: "0.5rem" }}>/</span>
-                  <span>{selectedBlog.Title}</span>
+                  <span>{selectedBlog?.Title}</span>
                 </>
               )}
             </div>
 
             <img
-              src={selectedBlog.Image}
+              src={selectedBlog?.Image}
               style={{ width: "100%" }}
-              alt={selectedBlog.Title}
+              alt={selectedBlog?.Title}
             />
-            <Markdown>{selectedBlog.Article}</Markdown>
+            <Markdown>{selectedBlog?.Article}</Markdown>
           </div>
         ) : (
           <div
@@ -93,16 +102,12 @@ export default function Blog() {
                 style={{
                   marginBottom: "0.4rem",
                   cursor: "pointer",
-                  color:
-                    selectedBlog.Title === blog.Title ? "#f4f4f5" : "black",
-                  fontWeight:
-                    selectedBlog.Title === blog.Title ? "bold" : "normal",
                 }}
               >
                 <img
-                  src={selectedBlog.Image}
+                  src={selectedBlog?.Image}
                   style={{ width: "100%" }}
-                  alt={selectedBlog.Title}
+                  alt={selectedBlog?.Title}
                 />
                 <div>
                   <p style={{ color: "#18181b" }}> {blog.Title}</p>
