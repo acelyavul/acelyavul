@@ -32,10 +32,18 @@
   box-sizing: inherit;
 }
 
+html,
+body {
+  overflow-x: hidden;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   box-sizing: border-box;
   background-color: var(--zinc-50);
-  overflow-x: hidden;
   scroll-behavior: smooth;
   font-family: "Raleway", sans-serif;
   line-height: 1.5;

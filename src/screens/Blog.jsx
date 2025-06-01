@@ -10,7 +10,7 @@ export default function Blog() {
   const navigate = useNavigate();
   const { slug } = useParams();
   const [selectedBlog, setSelectedBlog] = useState(null);
-  console.log(slug);
+
   useEffect(() => {
     if (slug) {
       const found = blogs.find((blog) => blog.Slug === slug);
@@ -22,27 +22,9 @@ export default function Blog() {
 
   return (
     <section className={styles.section}>
-      <div
-        style={{
-          display: "flex",
-          flexDirection: "row",
-          marginBottom: "5rem",
-          backgroundColor: "#f4f4f5",
-          padding: "1rem",
-        }}
-      >
+      <div className={styles.blogWrapper}>
         {slug ? (
-          <div
-            className="content"
-            style={{
-              width: "100%",
-              textAlign: "left",
-              fontSize: 20,
-              whiteSpace: "pre-line",
-              padding: "2rem 1rem",
-              backgroundColor: "#f4f4f5",
-            }}
-          >
+          <div className={styles.content}>
             <div
               style={{
                 marginBottom: "1rem",
@@ -71,25 +53,72 @@ export default function Blog() {
 
             <img
               src={selectedBlog?.Image}
-              style={{ width: "100%" }}
+              className={styles.image}
               alt={selectedBlog?.Title}
             />
-            <Markdown>{selectedBlog?.Article}</Markdown>
+
+            <Markdown
+              components={{
+                a: ({ node, children, ...props }) => (
+                  <a
+                    {...props}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={{ color: "#0070f3", textDecoration: "underline" }}
+                  >
+                    {children}
+                  </a>
+                ),
+                p: (props) => (
+                  <p
+                    style={{
+                      marginTop: "0.25rem",
+                      marginBottom: "0.25rem",
+                      lineHeight: "1.6",
+                    }}
+                    {...props}
+                  />
+                ),
+                ul: (props) => (
+                  <ul
+                    style={{
+                      paddingLeft: "1.25rem",
+                      marginTop: "0.25rem",
+                      marginBottom: "0.25rem",
+                      listStylePosition: "inside",
+                    }}
+                    {...props}
+                  />
+                ),
+                ol: (props) => (
+                  <ol
+                    style={{
+                      paddingLeft: "1.25rem",
+                      marginTop: "0.25rem",
+                      marginBottom: "0.25rem",
+                      listStylePosition: "inside",
+                    }}
+                    {...props}
+                  />
+                ),
+                li: (props) => (
+                  <li
+                    style={{
+                      wordBreak: "break-word",
+                      lineHeight: "1.5",
+                      marginTop: "0.15rem",
+                      marginBottom: "0.15rem",
+                    }}
+                    {...props}
+                  />
+                ),
+              }}
+            >
+              {selectedBlog?.Article}
+            </Markdown>
           </div>
         ) : (
-          <div
-            style={{
-              width: "100%",
-              padding: "1rem",
-              fontSize: 18,
-              borderRight: "1px solid #ccc",
-              minHeight: "100vh",
-              backgroundColor: "#f4f4f5",
-              display: "flex",
-              flexDirection: "row",
-              gap: "1rem",
-            }}
-          >
+          <div className={styles.blogListContainer}>
             {blogs.map((blog, index) => (
               <div
                 key={index}
@@ -105,13 +134,13 @@ export default function Blog() {
                 }}
               >
                 <img
-                  src={selectedBlog?.Image}
+                  src={blog?.Image}
                   style={{ width: "100%" }}
-                  alt={selectedBlog?.Title}
+                  alt={blog?.Title}
                 />
                 <div>
                   <p style={{ color: "#18181b" }}> {blog.Title}</p>
-                  <p style={{ color: "#71717a" }}>
+                  <p style={{ color: "#71717a", fontSize: 12 }}>
                     {new Date(blog.PublishTime).toLocaleDateString(
                       blog.Lang === "tr" ? "tr-TR" : "en-US",
                     )}
