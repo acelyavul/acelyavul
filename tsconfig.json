@@ -12,15 +12,19 @@
         "allowSyntheticDefaultImports": true,
         "strict": true,
         "forceConsistentCasingInFileNames": true,
-        "module": "ESNext",
+        "module": "CommonJS",
         "moduleResolution": "Node",
         "resolveJsonModule": true,
         "isolatedModules": true,
-        "noEmit": true,
-        "jsx": "react-jsx"
+        "noEmit": false,
+        "jsx": "react-jsx",
+        "outDir": "dist",
     },
     "include": [
-        "src"
+        "src",
+        "scripts",
+        "src/types",
+        "scripts/images.d.ts",
     ],
     "exclude": [
         "node_modules"

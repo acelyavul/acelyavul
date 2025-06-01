@@ -2,3 +2,4 @@
 User-agent: Googlebot
 Disallow: /src/assets/images
 
+Sitemap: https://www.vuluvan.com/sitemap.xml
