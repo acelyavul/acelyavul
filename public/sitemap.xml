@@ -21,7 +21,7 @@
 
   <url>
     <loc>https://www.vuluvan.com/blog</loc>
-    <lastmod>2025-05-31T18:30:00.000Z</lastmod>
+    <lastmod>2025-06-02T06:16:21.436Z</lastmod>
     <priority>0.8</priority>
   </url>
 
@@ -46,6 +46,30 @@
   <url>
     <loc>https://www.vuluvan.com/blog/zihin-gercekligi-nasil-insa-eder</loc>
     <lastmod>2025-05-04T08:03:27.671Z</lastmod>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://www.vuluvan.com/medium-blogs/how-the-mind-constructs-reality.html</loc>
+    <lastmod>2025-06-01T18:16:02.808Z</lastmod>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://www.vuluvan.com/medium-blogs/iki-sistem-bir-karar-dusuncelerin-kontrolu-kimde.html</loc>
+    <lastmod>2025-06-01T18:16:02.808Z</lastmod>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://www.vuluvan.com/medium-blogs/two-systems-one-decision-who-controls-your-thoughts.html</loc>
+    <lastmod>2025-06-01T18:16:02.808Z</lastmod>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://www.vuluvan.com/medium-blogs/zihin-gercekligi-nasil-insa-eder.html</loc>
+    <lastmod>2025-06-01T18:16:02.808Z</lastmod>
     <priority>0.9</priority>
   </url>
 </urlset>

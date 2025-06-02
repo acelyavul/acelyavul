@@ -5,18 +5,6 @@ import { blogs } from "../src/blog/index";
 const siteUrl = "https://www.vuluvan.com";
 
 const generateSitemap = () => {
-  const blogUrls = blogs.map((post: any) => {
-    const url = `${siteUrl}/blog/${post.Slug}`;
-    const lastmod = new Date(post.PublishTime).toISOString();
-
-    return `
-  <url>
-    <loc>${url}</loc>
-    <lastmod>${lastmod}</lastmod>
-    <priority>0.9</priority>
-  </url>`;
-  });
-
   const staticUrls = [
     {
       loc: `${siteUrl}/`,
@@ -47,9 +35,40 @@ const generateSitemap = () => {
   </url>`,
   );
 
+  const blogUrls = blogs.map((post: any) => {
+    const url = `${siteUrl}/blog/${post.Slug}`;
+    const lastmod = new Date(post.PublishTime).toISOString();
+    return `
+  <url>
+    <loc>${url}</loc>
+    <lastmod>${lastmod}</lastmod>
+    <priority>0.9</priority>
+  </url>`;
+  });
+
+  const mediumHtmlDir = path.join(__dirname, "..", "public", "medium-blogs");
+  const mediumBlogUrls = fs.existsSync(mediumHtmlDir)
+    ? fs
+        .readdirSync(mediumHtmlDir)
+        .filter((file) => file.endsWith(".html"))
+        .map((file) => {
+          const loc = `${siteUrl}/medium-blogs/${encodeURIComponent(file)}`;
+          const filePath = path.join(mediumHtmlDir, file);
+          const stats = fs.statSync(filePath);
+          const lastmod = stats.mtime.toISOString();
+
+          return `
+  <url>
+    <loc>${loc}</loc>
+    <lastmod>${lastmod}</lastmod>
+    <priority>0.9</priority>
+  </url>`;
+        })
+    : [];
+
   const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-${[...staticUrls, ...blogUrls].join("\n")}
+${[...staticUrls, ...blogUrls, ...mediumBlogUrls].join("\n")}
 </urlset>`;
 
   const outputPath = path.join(__dirname, "..", "public", "sitemap.xml");
