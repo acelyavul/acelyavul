@@ -59,9 +59,7 @@ Because while **System 1 is generally good at what it does**, its logic and stat
 
 And **System 1 cannot be turned off**.
 
-That’s because it’s the brain’s default mode—even when the mind is “at rest,” System 1 remains active. These streams of thought are associated with a neural system called the **Default Mode Network**.
-
-In my next post, I’ll explore how this “idle-running” mode of the mind influences our thought flow and perception.
+Because it is the brain’s default mode. In my next post, I will explore the brain network that becomes active when the mind is at rest—known in neuroscience as the **Default Mode Network**—and how it shapes the flow of thought.
 
 ## References
 

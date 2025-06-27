@@ -1,10 +1,28 @@
 import { getImage } from "../utils";
+import { brainNetworks } from "./brainNetworks";
 import { gerçeklik } from "./gerçeklik";
 import { ikiSistem } from "./ikiSistem";
 import { reality } from "./reality";
 import { twoSystems } from "./twoSystems";
+import { zihinAğları } from "./zihinAğları";
 
 export const blogs = [
+  {
+    Lang: "en",
+    Title: "Brain Networks: Understanding the Mechanics",
+    Article: brainNetworks,
+    Image: getImage("brain-mechanism"),
+    Slug: "brain-networks-understanding-the-mechanics",
+    PublishTime: "2025-06-26T23:40:00.000Z",
+  },
+  {
+    Lang: "tr",
+    Title: "Beyin Ağları: Mekaniğini Anlamak",
+    Article: zihinAğları,
+    Image: getImage("brain-mechanism"),
+    Slug: "beyin-aglari-mekanigini-anlamak",
+    PublishTime: "2025-06-26T23:40:00.000Z",
+  },
   {
     Lang: "en",
     Title: "Two Systems, One Decision: Who Controls Your Thoughts?",

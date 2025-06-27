@@ -28,8 +28,8 @@
   border-radius: 0.25rem;
   background-color: var(--zinc-100);
   padding: 1rem 1rem;
-  max-width: 25rem;
-  min-height: 20rem;
+  max-width: 30rem;
+  min-height: 30rem;
 }
 
 .iconStyle {
@@ -51,7 +51,7 @@
   display: flex;
   flex-direction: column;
   padding: 0.5rem 0.5rem 0 0.5rem;
-  gap: 0.3rem;
+  margin-top: 0.5rem;
 }
 
 .titleStyle {
@@ -80,6 +80,7 @@
   align-items: center;
   justify-content: flex-start;
   padding: 0 0 0.5rem 0.5rem;
+  margin-top: 1rem;
 }
 
 .imageStyle {

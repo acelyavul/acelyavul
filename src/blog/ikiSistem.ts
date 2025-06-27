@@ -60,8 +60,7 @@ Sistem 2, Sistem 1’in dünya modeliyle uyuşmayan bir olay algılandığında 
 
 Ve **Sistem 1 kapatılamaz.**
 
-Çünkü, beynin varsayılan çalışma biçimidir ve zihin dinlenme halindeyken bile aktiftir. Bu düşünce akışları, nörobilimde **Default Mode Network (Varsayılan Mod Ağı)** olarak adlandırılan beyin ağıyla ilişkilendirilir.
-Bir sonraki yazımda, zihnimizin bu “boşta çalışır” halini ve düşünce akışını nasıl etkilediğini ele alacağım.
+Çünkü, beynin varsayılan çalışma biçimidir. Bir sonraki yazımda, zihin boşta kaldığında devreye giren ve nörobilimde **Default Mode Network (Varsayılan Mod Ağı)** olarak adlandırılan beyin ağını ve düşünce akışının nasıl işlediğini ele alacağım.
 
 ## Kaynaklar
 

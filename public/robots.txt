@@ -1,5 +1,4 @@
 # https://www.robotstxt.org/robotstxt.html
-User-agent: Googlebot
-Disallow: /src/assets/images
-
+User-agent: *
+Allow: /
 Sitemap: https://www.vuluvan.com/sitemap.xml
