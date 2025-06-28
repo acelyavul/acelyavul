@@ -108,6 +108,8 @@ Thoughts that spontaneously arise in the mind are often triggered by the followi
 - **Emergence during mind-wandering**: The mind may project past experiences into the future and begin planning spontaneously. When focusing on a new topic, previously unnoticed information may emerge. These unconsciously processed contents can eventually merge into conscious thought and lead to creative insights at unexpected times
 - **Fatigue or mental relaxation**: When the mind moves away from intense focus, attention becomes unbound. Thoughts begin to flow without control. That sudden idea during a walk, while lying down, or staring into space is a result of this. As the outer world fades, the inner world becomes active.
 
+**Ultimately**, the spontaneous thoughts that arise in the mind are **outputs of the internal models shaped by each individual's unique way of perceiving the world.**
+
 ### References
 
 **Alezzi, A.**, Kamel, N. S., Faye, I., & **Gunaseli, E.** (2021). *Analysis of default mode network in social anxiety disorder: EEG resting-state effective connectivity study.* **Sensors, 21**(12), 4098.

@@ -108,6 +108,8 @@ Zihinde beliren fikirler genellikle şu durumlara bağlı olarak kendiliğinden 
 - **Zihinsel dolaşma sırasında ortaya çıkanlar**: Zihin, geçmiş deneyimlerini geleceğe yansıtarak kendiliğinden planlar yapabilir. Yeni bir konuya odaklanıldığında, daha önce fark edilmeden kaydedilen bilgiler devreye girer. Bilinçdışı işlenen bu içerikler zamanla bilinçli düşünceye karışabilir ve beklenmedik anlarda yaratıcı çözümler üretilebilir.
 - **Yorgunluk ya da zihinsel gevşeme**: Zihin yoğun odaklanmadan uzaklaştığında, dikkat serbest kalır. Bu durumda düşünceler kontrol edilmeden akmaya başlar. Günün sonunda, yürürken, uzanırken ya da boş boş bakarken zihne bir anda bir fikir düşmesi bundandır. Dış dünya zayıflarken, iç dünya harekete geçer.
 
+**Sonuç olarak**, zihinde kendiliğinden beliren düşünceler; herkesin **kendi dünyayı algılama biçimine göre oluşturduğu içsel modellerin bir çıktısıdır.**
+
 ### Kaynaklar
 
 **Alezzi, A.**, Kamel, N. S., Faye, I., & **Gunaseli, E.** (2021). *Analysis of default mode network in social anxiety disorder: EEG resting-state effective connectivity study.* **Sensors, 21**(12), 4098.
