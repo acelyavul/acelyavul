@@ -1,4 +1,6 @@
 import { getImage } from "../utils";
+import { bağKurma } from "./bağKurma";
+import { bonding } from "./bonding";
 import { brainNetworks } from "./brainNetworks";
 import { gerçeklik } from "./gerçeklik";
 import { ikiSistem } from "./ikiSistem";
@@ -7,6 +9,22 @@ import { twoSystems } from "./twoSystems";
 import { zihinAğları } from "./zihinAğları";
 
 export const blogs = [
+  {
+    Lang: "en",
+    Title: "The Brain's Bonding Strategy",
+    Article: bonding,
+    Image: getImage("heart"),
+    Slug: "the-brains-bonding-strategy",
+    PublishTime: "2025-07-20T22:51:00.000Z",
+  },
+  {
+    Lang: "tr",
+    Title: "Beynin Bağ Kurma Stratejisi",
+    Article: bağKurma,
+    Image: getImage("heart"),
+    Slug: "beynin-bag-kurma-stratejisi",
+    PublishTime: "2025-07-20T22:51:00.000Z",
+  },
   {
     Lang: "en",
     Title: "Brain Networks: Understanding the Mechanics",
