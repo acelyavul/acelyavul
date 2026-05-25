@@ -1,3 +1,5 @@
-module.exports = app => {
-	app.get(/^\/$/, (req, res) => res.redirect("/home"));
+module.exports = (app) => {
+  app.get(/^\/home\/?$/, (req, res) => {
+    res.redirect(301, "/");
+  });
 };

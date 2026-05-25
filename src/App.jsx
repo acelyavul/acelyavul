@@ -15,8 +15,8 @@ export default function App() {
       <Container>
         <Navbar />
         <Routes>
-          <Route path="/" element={<Navigate replace to="home" />} />
-          <Route path="home" element={<Hero />} />
+          <Route path="/" element={<Hero />} />
+          <Route path="/home" element={<Navigate replace to="/" />} />
           <Route path="about" element={<About />} />
           <Route path="projects" element={<Projects />} />
           <Route path="blog" element={<Blog />} />
