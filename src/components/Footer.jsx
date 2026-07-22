@@ -6,7 +6,7 @@ const Footer = () => {
     <footer className={styles.section} id="contact">
       <div className="alignCenter">
         <a
-          href="https://www.linkedin.com/in/a%C3%A7elya-v-833887212/"
+          href="https://www.linkedin.com/in/acelya-v-833887212/"
           target="_blank"
           rel="noopener noreferrer"
           aria-label="Linkedin"
