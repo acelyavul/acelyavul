@@ -3,12 +3,30 @@ import { bağKurma } from "./bağKurma";
 import { bonding } from "./bonding";
 import { brainNetworks } from "./brainNetworks";
 import { gerçeklik } from "./gerçeklik";
+import { howDoesTimePass } from "./howDoesTimePass";
 import { ikiSistem } from "./ikiSistem";
 import { reality } from "./reality";
 import { twoSystems } from "./twoSystems";
+import { zamanNasilGecer } from "./zamanNasilGecer";
 import { zihinAğları } from "./zihinAğları";
 
 export const blogs = [
+  {
+    Lang: "en",
+    Title: "How Does Time Pass?",
+    Article: howDoesTimePass,
+    Image: getImage("time-passing"),
+    Slug: "how-does-time-pass",
+    PublishTime: "2026-09-21T10:41:42.090Z",
+  },
+  {
+    Lang: "tr",
+    Title: "Zaman Nasıl Geçer?",
+    Article: zamanNasilGecer,
+    Image: getImage("time-passing"),
+    Slug: "zaman-nasil-gecer",
+    PublishTime: "2026-09-21T10:41:42.090Z",
+  },
   {
     Lang: "en",
     Title: "The Brain's Bonding Strategy",

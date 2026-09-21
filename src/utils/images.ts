@@ -12,6 +12,8 @@ export const getImage = (ImageKey: string): string => {
       return require("../assets/blog/brain_mechanism_800x433.png");
     case "heart":
       return require("../assets/blog/heart.png");
+    case "time-passing":
+      return require("../assets/blog/time-passing.jpg");
     default:
       return "";
   }

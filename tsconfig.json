@@ -12,18 +12,16 @@
         "allowSyntheticDefaultImports": true,
         "strict": true,
         "forceConsistentCasingInFileNames": true,
-        "module": "ESNext",
-        "moduleResolution": "Bundler",
         "resolveJsonModule": true,
         "isolatedModules": true,
-        "noEmit": false,
-        "jsx": "react-jsx",
+        "noEmit": true,
+        "jsx": "react-jsx"
     },
     "include": [
         "src",
         "scripts",
         "src/types",
-        "scripts/images.d.ts",
+        "scripts/images.d.ts"
     ],
     "exclude": [
         "node_modules"

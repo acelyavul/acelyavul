@@ -122,6 +122,7 @@ export default function Blog() {
             {blogs.map((blog, index) => (
               <div
                 key={index}
+                className={styles.blogItem}
                 onClick={() => {
                   setSelectedBlog(blog);
                   if (blog.Slug) {

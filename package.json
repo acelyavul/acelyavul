@@ -19,7 +19,8 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "build:css": "tailwindcss -i src/index.css -o src/main.css -w",
-    "generate-sitemap": "TSNODE=true ts-node scripts/generate-sitemap.ts"
+    "generate-sitemap": "TSNODE=true ts-node scripts/generate-sitemap.ts",
+    "add-blog-to-sitemap": "TSNODE=true ts-node scripts/add-blog-to-sitemap.ts"
   },
   "eslintConfig": {
     "extends": [
