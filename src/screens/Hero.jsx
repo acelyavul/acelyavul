@@ -10,7 +10,7 @@ export default function Hero() {
         Hello
       </p>
       <h1 className={`animation-fadeIn ${styles.textStyle}`}>
-        I am FullStack Engineer, based in Istanbul.
+        I am a Software Engineer focused on AI and Computer Vision
       </h1>
     </section>
   );
