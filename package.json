@@ -20,7 +20,8 @@
     "eject": "react-scripts eject",
     "build:css": "tailwindcss -i src/index.css -o src/main.css -w",
     "generate-sitemap": "TSNODE=true ts-node scripts/generate-sitemap.ts",
-    "add-blog-to-sitemap": "TSNODE=true ts-node scripts/add-blog-to-sitemap.ts"
+    "add-blog-to-sitemap": "TSNODE=true ts-node scripts/add-blog-to-sitemap.ts",
+    "build:prerender": "react-scripts build && node scripts/prerender.cjs"
   },
   "eslintConfig": {
     "extends": [
@@ -45,6 +46,7 @@
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "autoprefixer": "^10.4.7",
+    "playwright": "^1.64.1",
     "postcss": "^8.4.14",
     "ts-node": "^10.9.2",
     "typescript": "5.8.3"

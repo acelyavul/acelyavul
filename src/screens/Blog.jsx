@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import Markdown from "react-markdown";
-import { useNavigate, useParams } from "react-router-dom";
+import { Link, useNavigate, useParams } from "react-router-dom";
 import { blogs } from "../blog";
 import styles from "./Blog.module.css";
 
@@ -32,8 +32,8 @@ export default function Blog() {
                 color: "#71717a",
               }}
             >
-              <span
-                onClick={() => navigate("/blog")}
+              <Link
+                to="/blog"
                 style={{
                   cursor: "pointer",
                   textDecoration: "underline",
@@ -42,7 +42,7 @@ export default function Blog() {
                 }}
               >
                 Blog
-              </span>
+              </Link>
               {slug && (
                 <>
                   <span style={{ marginRight: "0.5rem" }}>/</span>
