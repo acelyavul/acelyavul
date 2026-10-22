@@ -6,6 +6,7 @@ import styles from "./Projects.module.css";
 export default function Projects() {
   return (
     <section className={`animation-fadeIn ${styles.section}`}>
+      <h1 className={styles.title}>Featured Projects</h1>
       {projects.map((project) => (
         <div key={project.id} className={styles.displayInline}>
           <figure className={styles.projectContainerStyle}>

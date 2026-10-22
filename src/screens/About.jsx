@@ -4,7 +4,9 @@ export default function About() {
   return (
     <section className={styles.section}>
       <div className={styles.textContainer}>
-        <p className={styles.title}>Software Engineer | AI & Computer Vision</p>
+        <h1 className={styles.title}>
+          Software Engineer | AI & Computer Vision
+        </h1>
         <blockquote className={`animation-fadeIn ${styles.textStyle}`}>
           ❝Hi! I’m a Software Engineer with nearly five years of experience
           building web and mobile products with React, React Native, TypeScript,

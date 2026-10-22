@@ -22,6 +22,7 @@ export default function Blog() {
 
   return (
     <section className={styles.section}>
+      {!slug && <h1 className={styles.title}>Thoughts & Explorations</h1>}
       <div className={styles.blogWrapper}>
         {slug ? (
           <div className={styles.content}>

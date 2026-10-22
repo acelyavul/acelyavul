@@ -95,18 +95,67 @@ async function main() {
       );
 
       await page.evaluate((route) => {
-        const titles = {
-          "/": "Vuluvan",
-          "/about": "About | Vuluvan",
-          "/projects": "Projects | Vuluvan",
-          "/blog": "Blog | Vuluvan",
+        const seo = {
+          "/": {
+            title: "Acelya Vuluvan | Software Engineer & AI",
+            description:
+              "Explore Acelya Vuluvan's software engineering portfolio, projects, and articles on artificial intelligence, computer vision, and technology.",
+          },
+          "/about": {
+            title: "About Acelya Vuluvan | Software Engineer & AI",
+            description:
+              "Learn about Acelya Vuluvan, a software engineer working with React, Python, artificial intelligence, computer vision, machine learning and MLOps.",
+          },
+          "/projects": {
+            title: "Software Engineering Projects | Acelya Vuluvan",
+            description:
+              "Explore software engineering projects by Acelya Vuluvan, including web and mobile applications, AI-powered systems, and React Native projects.",
+          },
+          "/blog": {
+            title: "AI, Technology & Neuroscience Blog | Acelya Vuluvan",
+            description:
+              "Explore articles by Acelya Vuluvan about artificial intelligence, neuroscience, human cognition, machine learning, and technology.",
+          },
         };
 
         const heading = document
           .querySelector("#root section h1")
           ?.textContent?.trim();
 
-        document.title = titles[route] || `${heading} | Vuluvan`;
+        const articleParagraph = Array.from(
+          document.querySelectorAll("#root section p"),
+        )
+          .map((p) => p.textContent?.replace(/\s+/g, " ").trim())
+          .find((text) => text && text.length > 60);
+
+        const shorten = (text, max = 155) => {
+          if (text.length <= max) return text;
+
+          return (
+            text
+              .slice(0, max - 1)
+              .replace(/\s+\S*$/, "")
+              .trim() + "…"
+          );
+        };
+
+        document.title =
+          seo[route]?.title ||
+          (heading
+            ? `${heading} | Acelya Vuluvan`
+            : "Blog Article | Acelya Vuluvan");
+
+        let description = document.querySelector('meta[name="description"]');
+
+        if (!description) {
+          description = document.createElement("meta");
+          description.name = "description";
+          document.head.appendChild(description);
+        }
+
+        description.content =
+          seo[route]?.description ||
+          shorten(articleParagraph || "Read this article by Acelya Vuluvan.");
 
         let canonical = document.querySelector('link[rel="canonical"]');
 
